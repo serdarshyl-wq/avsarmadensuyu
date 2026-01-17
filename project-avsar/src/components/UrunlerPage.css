@@ -1,0 +1,152 @@
+.urunler-page-container {
+    width: 100%;
+    margin-top: 110px;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.urunler-page-title {
+    display: none;
+}
+
+.urunler-content-wrapper {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+.urunler-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.urun-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    padding: 20px;
+    border-radius: 20px;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.urun-card:hover {
+    transform: translateY(-5px);
+    box-shadow: none;
+    border-color: transparent;
+}
+
+.urun-image-wrapper {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.urun-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.1));
+    z-index: 10;
+    position: relative;
+    transition: transform 0.4s ease;
+}
+
+.fruit-img {
+    position: absolute;
+    height: 120px;
+    width: auto;
+    object-fit: contain;
+    top: 50%;
+    left: 50%;
+    z-index: 5;
+    opacity: 1;
+    transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.1));
+    border-radius: 30px;
+}
+
+.fruit-0 {
+    transform: translate(-90%, -50%) scale(0.8) rotate(-5deg);
+}
+
+.fruit-1 {
+    transform: translate(-10%, -50%) scale(0.8) rotate(5deg);
+}
+
+.fruit-2 {
+    transform: translate(-50%, -80%) scale(0.7) rotate(0deg);
+}
+
+.fruit-single {
+    transform: translate(0%, -50%) scale(0.8) rotate(5deg);
+}
+
+.urun-card:hover .urun-image {
+    transform: scale(1.05);
+}
+
+.urun-card:hover .fruit-0 {
+    transform: translate(-140%, -50%) scale(1) rotate(-15deg);
+}
+
+.urun-card:hover .fruit-1 {
+    transform: translate(40%, -50%) scale(1) rotate(15deg);
+}
+
+.urun-card:hover .fruit-2 {
+    transform: translate(-50%, -150%) scale(0.9) rotate(0deg);
+}
+
+.urun-card:hover .fruit-single {
+    transform: translate(40%, -50%) scale(1) rotate(15deg);
+}
+
+.urun-name {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 600;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+}
+
+@media (max-width: 1200px) {
+    .urunler-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .urunler-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .urunler-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .urunler-page-title {
+        font-size: 2rem;
+    }
+}

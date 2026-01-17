@@ -1,0 +1,117 @@
+.haberler-page-container {
+    width: 100%;
+    margin-top: 110px;
+    margin-top: 110px;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.haberler-page-title {
+    font-size: 4rem;
+    font-size: 4rem;
+    font-weight: 800;
+    font-weight: 800;
+    margin-bottom: 0;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 100px 0;
+    padding: 100px 0;
+    padding-left: 10%;
+    padding-left: 10%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/kurumsal-görseller/hakkımızda3.png') no-repeat center center;
+    background-size: cover;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Poppins', sans-serif;
+}
+
+.haberler-content-wrapper {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+.news-list {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.news-item {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 60px;
+}
+
+.news-item:last-child {
+    border-bottom: none;
+}
+
+.news-image-wrapper {
+    width: 100%;
+    max-height: 600px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.news-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.news-item:hover .news-image {
+    transform: scale(1.02);
+}
+
+.news-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.news-title {
+    font-size: 2rem;
+    color: #1e5128;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+
+.news-text {
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 768px) {
+    .haberler-page-title {
+        font-size: 2.2rem;
+    }
+
+    .news-title {
+        font-size: 1.6rem;
+    }
+
+    .news-text {
+        font-size: 1rem;
+    }
+}

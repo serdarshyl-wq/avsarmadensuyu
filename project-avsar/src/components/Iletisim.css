@@ -1,0 +1,131 @@
+.iletisim-section {
+    width: 100%;
+    margin-top: 110px;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.iletisim-map {
+    width: 100%;
+    height: 200px;
+    display: block;
+    border: none;
+    filter: grayscale(0%);
+}
+
+.iletisim-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    display: flex;
+    gap: 50px;
+}
+
+.iletisim-info-column,
+.iletisim-form-column {
+    flex: 1;
+}
+
+.iletisim-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.iletisim-details {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.iletisim-detail-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.iletisim-icon-wrapper {
+    min-width: 40px;
+    height: 40px;
+    background-color: #2ecc71;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+}
+
+.iletisim-text {
+    padding-top: 8px;
+    line-height: 1.6;
+}
+
+.iletisim-detail-link {
+    color: #555;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.iletisim-detail-link:hover {
+    color: #2ecc71;
+}
+
+.iletisim-input,
+.iletisim-textarea {
+    width: 100%;
+    padding: 15px;
+    background-color: #f7f7f7;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    color: #333;
+    margin-bottom: 15px;
+    transition: all 0.3s;
+}
+
+.iletisim-input:focus,
+.iletisim-textarea:focus {
+    outline: none;
+    border-color: #bbb;
+    background-color: #f0f0f0;
+}
+
+.iletisim-textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.iletisim-submit-btn {
+    background-color: #2ecc71;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: not-allowed;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    opacity: 0.6;
+    display: block;
+    margin-top: 10px;
+}
+
+@media (max-width: 900px) {
+    .iletisim-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+}

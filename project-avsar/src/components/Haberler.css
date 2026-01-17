@@ -1,0 +1,110 @@
+.haberler-section {
+    width: 100%;
+    padding: 80px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.haberler-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.haber-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.haber-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.haber-card:hover {
+    transform: translateY(-10px);
+}
+
+.haber-image-wrapper {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.haber-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.haber-card:hover .haber-image {
+    transform: scale(1.05);
+}
+
+.haber-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1e5128;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 1.4;
+    transition: color 0.3s ease;
+}
+
+.haber-card:hover .haber-title {
+    color: #40e0d0;
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .haberler-section {
+        padding: 60px 0;
+    }
+
+    .haberler-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        width: 88%;
+    }
+
+    .haber-title {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .haberler-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .haberler-grid {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .haber-card-link {
+        min-width: 80%;
+        scroll-snap-align: center;
+        flex-shrink: 0;
+    }
+}

@@ -1,0 +1,240 @@
+.oduller-section {
+    width: 100%;
+    background: linear-gradient(90deg, #fff9c4 0%, #fdd835 50%, #fff9c4 100%);
+    padding: 0;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 160px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 5;
+    margin: 100px 0;
+}
+
+.oduller-container {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    padding: 0;
+}
+
+.oduller-left,
+.oduller-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.oduller-left {
+    justify-content: flex-start;
+    padding-left: 0;
+}
+
+.oduller-right {
+    justify-content: flex-end;
+    padding-right: 0;
+}
+
+.odul-bottle-left {
+    height: 600%;
+    min-width: 300px;
+    width: auto;
+    object-fit: contain;
+    transform-origin: center center;
+    transform: rotate(25deg) translateX(15%) translateY(10%);
+    z-index: 10;
+    margin-left: -180px;
+}
+
+.odul-bottle-right {
+    height: 600%;
+    min-width: 300px;
+    width: auto;
+    object-fit: contain;
+    transform-origin: center center;
+    transform: rotate(-25deg) translateX(-15%) translateY(10%);
+    z-index: 10;
+    margin-right: -180px;
+}
+
+.oduller-center {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    z-index: 20;
+    position: relative;
+    overflow: visible;
+}
+
+.odul-ribbon {
+    height: 350px;
+    width: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
+    z-index: 21;
+    margin-top: -20px;
+}
+
+.odul-text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.odul-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+    color: #000;
+    margin: 0;
+    margin-bottom: 10px;
+    line-height: 1;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.odul-subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .oduller-section {
+        height: 140px;
+        margin: 70px 0;
+    }
+
+    .odul-bottle-left {
+        height: 550%;
+        margin-left: -150px;
+    }
+
+    .odul-bottle-right {
+        height: 550%;
+        margin-right: -150px;
+    }
+
+    .odul-ribbon {
+        height: 300px;
+        margin-top: -15px;
+    }
+
+    .odul-title {
+        font-size: 2.5rem;
+    }
+
+    .odul-subtitle {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .oduller-section {
+        height: 100px;
+        padding: 0;
+        margin: 60px 0;
+        overflow: visible;
+    }
+
+    .oduller-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    }
+
+    .oduller-left {
+        flex: 1;
+        justify-content: flex-start;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+    }
+
+    .oduller-right {
+        flex: 1;
+        justify-content: flex-end;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+    }
+
+    .odul-bottle-left {
+        height: 850%;
+        min-width: 80px;
+        width: auto;
+        transform: rotate(25deg) translateY(5%);
+        margin-left: -35px;
+        padding-bottom: 5rem;
+    }
+
+    .odul-bottle-right {
+        height: 850%;
+        min-width: 80px;
+        width: auto;
+        transform: rotate(-25deg) translateY(5%);
+        margin-right: -35px;
+        padding-bottom: 5rem;
+    }
+
+    .oduller-center {
+        flex: 2;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        overflow: visible;
+    }
+
+    .odul-ribbon {
+        height: 280px;
+        width: auto;
+        margin-top: -70px;
+        margin-bottom: -70px;
+        position: relative;
+        z-index: 25;
+    }
+
+    .odul-text-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .odul-title {
+        font-size: 1.1rem;
+        white-space: nowrap;
+        margin-bottom: 2px;
+    }
+
+    .odul-subtitle {
+        font-size: 0.55rem;
+        letter-spacing: 0.3px;
+    }
+}

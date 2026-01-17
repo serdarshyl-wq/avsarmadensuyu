@@ -1,0 +1,139 @@
+.hikayemiz-section {
+    width: 100%;
+    padding: 80px 0;
+    background: linear-gradient(90deg, #1e5128 0%, #40e0d0 100%);
+    color: #fff;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hikayemiz-container {
+    max-width: 1600px;
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.hikayemiz-image-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 1s ease-out;
+    transition-delay: 0.5s;
+}
+
+.hikayemiz-content {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 1s ease-out;
+    transition-delay: 0s;
+    text-align: left;
+}
+
+.hikayemiz-section.visible .hikayemiz-image-wrapper {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.hikayemiz-section.visible .hikayemiz-content {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.hikayemiz-img {
+    max-width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.2));
+}
+
+.hikayemiz-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+}
+
+.hikayemiz-title:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background-color: #ffffff;
+}
+
+.hikayemiz-text p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: #f0f0f0;
+}
+
+.hikayemiz-text .highlight-text {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .hikayemiz-section {
+        padding: 60px 0;
+    }
+
+    .hikayemiz-container {
+        gap: 40px;
+    }
+
+    .hikayemiz-title {
+        font-size: 2.5rem;
+    }
+
+    .hikayemiz-text p {
+        font-size: 0.95rem;
+    }
+
+    .hikayemiz-img {
+        max-height: 450px;
+    }
+}
+
+@media (max-width: 968px) {
+    .hikayemiz-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hikayemiz-content {
+        align-items: center;
+        text-align: center;
+    }
+
+    .hikayemiz-title:after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .hikayemiz-image-wrapper {
+        margin-bottom: 2rem;
+    }
+}
