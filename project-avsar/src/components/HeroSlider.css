@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
 .hero-product-carousel {
     position: relative;
     z-index: 2;
@@ -810,7 +813,7 @@
     max-height: 550px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
 
 .hero-slider[data-slide='1'] .hero-content h1 {
     font-family: 'Poppins', sans-serif;
@@ -889,7 +892,7 @@
     padding-bottom: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
 
 .v-carousel-title {
     position: absolute;
